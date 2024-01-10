@@ -1,0 +1,66 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Calling PHPStan\\\\Type\\\\ParserNodeTypeToPHPStanType\\:\\:resolve\\(\\) is not covered by backward compatibility promise\\. The method might change in a minor PHPStan version\\.$#"
+			count: 1
+			path: src/Rules/Doctrine/ORM/EntityColumnRule.php
+
+		-
+			message: "#^Calling PHPStan\\\\Type\\\\TypehintHelper\\:\\:decideType\\(\\) is not covered by backward compatibility promise\\. The method might change in a minor PHPStan version\\.$#"
+			count: 1
+			path: src/Rules/Doctrine/ORM/EntityColumnRule.php
+
+		-
+			message: "#^Calling PHPStan\\\\Type\\\\ParserNodeTypeToPHPStanType\\:\\:resolve\\(\\) is not covered by backward compatibility promise\\. The method might change in a minor PHPStan version\\.$#"
+			count: 1
+			path: src/Rules/Doctrine/ORM/EntityRelationRule.php
+
+		-
+			message: "#^Calling PHPStan\\\\Type\\\\TypehintHelper\\:\\:decideType\\(\\) is not covered by backward compatibility promise\\. The method might change in a minor PHPStan version\\.$#"
+			count: 1
+			path: src/Rules/Doctrine/ORM/EntityRelationRule.php
+
+		-
+			message: "#^PHPDoc tag @var with type class\\-string is not subtype of native type 'Doctrine\\\\\\\\Bundle…'\\.$#"
+			count: 1
+			path: src/Stubs/Doctrine/StubFilesExtensionLoader.php
+
+		-
+			message: "#^Accessing PHPStan\\\\Rules\\\\DeadCode\\\\UnusedPrivatePropertyRule\\:\\:class is not covered by backward compatibility promise\\. The class might change in a minor PHPStan version\\.$#"
+			count: 1
+			path: tests/Rules/DeadCode/UnusedPrivatePropertyRuleTest.php
+
+		-
+			message: "#^Accessing PHPStan\\\\Rules\\\\Methods\\\\CallMethodsRule\\:\\:class is not covered by backward compatibility promise\\. The class might change in a minor PHPStan version\\.$#"
+			count: 1
+			path: tests/Rules/Doctrine/ORM/MagicRepositoryMethodCallRuleTest.php
+
+		-
+			message: "#^Accessing PHPStan\\\\Rules\\\\Exceptions\\\\CatchWithUnthrownExceptionRule\\:\\:class is not covered by backward compatibility promise\\. The class might change in a minor PHPStan version\\.$#"
+			count: 1
+			path: tests/Rules/Exceptions/CatchWithUnthrownExceptionRuleTest.php
+
+		-
+			message: "#^Accessing PHPStan\\\\Rules\\\\Exceptions\\\\TooWideMethodThrowTypeRule\\:\\:class is not covered by backward compatibility promise\\. The class might change in a minor PHPStan version\\.$#"
+			count: 1
+			path: tests/Rules/Exceptions/TooWideMethodThrowTypeRuleTest.php
+
+		-
+			message: "#^Accessing PHPStan\\\\Rules\\\\DeadCode\\\\UnusedPrivatePropertyRule\\:\\:class is not covered by backward compatibility promise\\. The class might change in a minor PHPStan version\\.$#"
+			count: 1
+			path: tests/Rules/Properties/MissingGedmoByPhpDocPropertyAssignRuleTest.php
+
+		-
+			message: "#^Accessing PHPStan\\\\Rules\\\\DeadCode\\\\UnusedPrivatePropertyRule\\:\\:class is not covered by backward compatibility promise\\. The class might change in a minor PHPStan version\\.$#"
+			count: 1
+			path: tests/Rules/Properties/MissingGedmoPropertyAssignRuleTest.php
+
+		-
+			message: "#^Accessing PHPStan\\\\Rules\\\\Properties\\\\MissingReadOnlyByPhpDocPropertyAssignRule\\:\\:class is not covered by backward compatibility promise\\. The class might change in a minor PHPStan version\\.$#"
+			count: 1
+			path: tests/Rules/Properties/MissingReadOnlyByPhpDocPropertyAssignRuleTest.php
+
+		-
+			message: "#^Accessing PHPStan\\\\Rules\\\\Properties\\\\MissingReadOnlyPropertyAssignRule\\:\\:class is not covered by backward compatibility promise\\. The class might change in a minor PHPStan version\\.$#"
+			count: 1
+			path: tests/Rules/Properties/MissingReadOnlyPropertyAssignRuleTest.php
